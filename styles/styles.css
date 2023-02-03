@@ -100,3 +100,28 @@ body {
     text-transform: uppercase;
     background-color: #756157;
 }
+
+.subscribe {
+    color: #FFFFFF;
+    background-color: #000000;
+    background-image: url("../images/subscribe.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.field {
+    background-color: #F2F2F2;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.subscribe-button {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+}
