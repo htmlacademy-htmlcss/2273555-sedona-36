@@ -36,3 +36,8 @@ body {
     color: inherit;
     text-decoration: none;
 }
+
+.main-index {
+    background-color: #FFFFFF;
+    color: #000000;
+}
