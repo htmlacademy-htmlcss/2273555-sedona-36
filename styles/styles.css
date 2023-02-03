@@ -37,6 +37,16 @@ body {
     text-decoration: none;
 }
 
+.navigation-user li:last-child {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #756157;
+}
+
 .main-index {
     background-color: #FFFFFF;
     color: #000000;
@@ -79,4 +89,14 @@ body {
 .advantages-item-blue .advantages-title,
 .advantages-item-blue .advantages-description {
     color: #FFFFFF;
+}
+
+.appointment-button {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #756157;
 }
