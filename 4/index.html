@@ -41,10 +41,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#!">
-              <span class="visually-hidden">
-                Вход.
-              </span>
+            <a class="navigation-button" href="#!">
               Хочу сюда!
             </a>
           </li>
@@ -52,14 +49,16 @@
       </nav>
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">Туристический город "Седона".</h1>
-      <img class="preview-background" src="images/index-background.jpg" wigth="1200" height="485"
-        alt="Фотография горного пейзажа.">
-      <img class="preview-welcome-logo" src="images/welcome.svg" width="458" height="352"
-        alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+      <div class="hero-block">
+        <h1 class="visually-hidden">Туристический город "Седона".</h1>
+        <img class="preview-background" src="images/index-background.jpg" wigth="1200" height="485"
+          alt="Фотография горного пейзажа.">
+        <img class="preview-welcome-logo" src="images/welcome.svg" width="458" height="352"
+          alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+      </div>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества.</h2>
-        <b class="subtitle preview-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        <h2 class="subtitle preview-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="preview-lead">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
@@ -70,11 +69,9 @@
             <img class="advantages-image" src="images/photo-1.jpg" width="800" height="384"
               alt="Туристический городок.">
           </li>
-          <li class="advantages-item">
-            <div class="advantages-item-sky">
-              <h3 class="advantages-title">Небольшая площадь</h3>
-              <p class="advantages-description">Все достопримечательности находятся очень близко</p>
-            </div>
+          <li class="advantages-item advantages-item-sky">
+            <h3 class="advantages-title">Небольшая площадь</h3>
+            <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item">
             <div class="advantages-item-white-blue">
@@ -100,7 +97,7 @@
       </section>
       <section class="services">
         <h2 class="visually-hidden">Сервис.</h2>
-        <b class="subtitle services-subtitle">Приезжайте в Седону отдохнуть в комфорте и уюте!</b>
+        <h2 class="subtitle services-subtitle">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="services-text">Опытный персонал и качественное обслуживание!</p>
         <ul class="services-list">
           <li class="services-item">
@@ -123,7 +120,7 @@
           Седоне</p>
         <button class="appointment-button" type="button">Поиск гостиницы в Седоне</button>
       </section>
-      <section class="subscribe">
+      <section class="subscribe main-subscribe">
         <h2 class="subtitle subscribe-subtitle">Подпишитесь на рассылку</h2>
         <p class="subscribe-lead">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
