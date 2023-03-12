@@ -125,7 +125,7 @@
             <label class="visually-hidden" for="subscribe-email">Ваш e-mail:</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
               required>
-            <button class="subscribe-button" type="submit">Подписаться</button>
+            <button class="button subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -179,7 +179,7 @@
           <a href="https://htmlacademy.ru">
             <svg class="developer-logo" aria-hidden="true" focusable="false" width="115" height="34"
               viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 13.7232V16.3232H2.5V13.7232H0Z" />
+              <path d="M0 13.7232V16.3232H2.5V13.7232H0Z" fill="black" />
               <path
                 d="M11.6 5.32324C10 5.32324 8.8 6.02324 8 7.02324H7.9V0.823242H5.9V16.3232H7.9V11.0232C7.9 8.92324 9.2 7.42324 11.2 7.42324C13 7.42324 14.1 8.82324 14.1 10.6232V16.3232H16.1V10.2232C16.2 7.22324 14.3 5.32324 11.6 5.32324Z"
                 fill="black" />
@@ -217,6 +217,88 @@
           </a>
         </div>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="close-button" aria-hidden="true" focusable="false" width="53" height="53" viewBox="0 0 53 53"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26.5" cy="26.5" r="26.5" fill="#F2F2F2" />
+              <path
+                d="M34 21.2923L32.7077 20L27 25.7077L21.2923 20L20 21.2923L25.7077 27L20 32.7077L21.2923 34L27 28.2923L32.7077 34L34 32.7077L28.2923 27L34 21.2923Z"
+                fill="black" />
+            </svg>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="field-group date-group">
+                <label class="arrival-date" for="arrival">Дата Заезда:</label>
+                <input class="field date-field" type="text" id="arrival" name="arrival-date"
+                  placeholder="27 апреля 2020">
+                <span class="warning-text-date error-date">Мы не можем отправить вас в прошлое.</span>
+              </div>
+              <div class="field-group date-group">
+                <label class="departure-date" for="departure">Дата Выезда:</label>
+                <input class="field date-field" type="text" id="departure" name="departure-date"
+                  placeholder="1 сентября 2023">
+                <span class="warning-text-date">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+              <div class="field-group family-group">
+                <label class="parents-number" for="parents">Взрослые:</label>
+                <div class="family-counter">
+                  <button class="family-number family-counter-minus">
+                    <svg class="count-button" aria-hidden="true" focusable="false" width="14" height="8"
+                      viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                  <input class="field family-number" type="number" id="parents" name="parents-number" value="2" min="0">
+                  <button class="family-number family-counter-plus">
+                    <svg class="count-button" aria-hidden="true" focusable="false" swidth="14" height="14"
+                      viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="field-group family-group">
+                <label class="kids-number" for="kids">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-kids">
+                    <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26"
+                      viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                        fill="white" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые
+                    будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+                <div class="family-counter">
+                  <button class="family-number family-counter-minus">
+                    <svg class="count-button" aria-hidden="true" focusable="false" width="14" height="8"
+                      viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                  <input class="field family-number" type="number" id="kids" name="kids-number" value="2" min="0">
+                  <button class="family-number family-counter-plus">
+                    <svg class="count-button" aria-hidden="true" focusable="false" swidth="14" height="14"
+                      viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button class="button search-form-button" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 

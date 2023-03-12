@@ -340,6 +340,7 @@ body {
   margin-bottom: 100px;
   padding: 10px 50px;
   border-radius: 4px;
+  border: none;
   cursor: pointer;
 }
 
@@ -361,6 +362,7 @@ body {
 }
 
 .field {
+  box-sizing: border-box;
   background-color: #f2f2f2;
   font-family: inherit;
   font-size: 18px;
@@ -371,7 +373,7 @@ body {
   padding: 14px 20px;
 }
 
-.subscribe-button {
+.button {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -449,4 +451,206 @@ body {
 
 .developer-logo:active path {
   fill: #7561574d;
+}
+
+.modal-container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2cc;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px #d9d9d9;
+  border-radius: 30px;
+}
+
+.modal-search {
+  box-sizing: border-box;
+  width: 717px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-form .field-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.date-group {
+  width: 577px;
+}
+
+.date-field {
+  width: 440px;
+  height: 48px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.date-field::placeholder {
+  color: #000000;
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.warning-text-date {
+  position: absolute;
+  margin: 74px 0 0 157px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.error-date {
+  color: #ff5757;
+}
+
+.family-group {
+  width: 247px;
+}
+
+.family-number {
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 0;
+  padding: 14px 10px;
+  width: 31px;
+  height: 48px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+
+.family-counter {
+  display: flex;
+}
+
+.family-counter-plus {
+  border-radius: 0 4px 4px 0;
+  width: 40px;
+  cursor: pointer;
+}
+
+.family-counter-minus {
+  border-radius: 4px 0 0 4px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  margin-left: 64px;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  margin-right: 30px;
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon path {
+  opacity: 0.6;
+}
+
+.tooltip-text {
+  box-sizing: border-box;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 23px 20px;
+  border-radius: 10px;
+  width: 256px;
+  min-height: 143px;
+  box-shadow: 0 15px 30px #0000004d;
+  position: absolute;
+  margin-left: -115px;
+  margin-top: 15px;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::after {
+  content: "";
+  background-image: url("../images/tooltip-corner.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form-button {
+  padding: 18px 256px;
+  border-radius: 10px;
+  line-height: 24px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
