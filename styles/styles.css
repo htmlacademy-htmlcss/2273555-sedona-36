@@ -413,12 +413,12 @@ body {
   padding: 13px 13px;
 }
 
-.social-icon:hover path,
-.social-icon:focus path {
+.social-icon:hover,
+.social-icon:focus {
   fill: #68a2ca;
 }
 
-.social-icon:active path {
+.social-icon:active {
   fill: #68a2ca4d;
 }
 
@@ -444,12 +444,12 @@ body {
   color: #7561574d;
 }
 
-.developer-logo:hover path,
-.developer-logo:focus path {
+.developer-logo:hover,
+.developer-logo:focus {
   fill: #756157;
 }
 
-.developer-logo:active path {
+.developer-logo:active {
   fill: #7561574d;
 }
 
@@ -494,6 +494,15 @@ body {
   cursor: pointer;
 }
 
+.close-button:hover,
+.close-button:active {
+  fill: #e6e6e6;
+}
+
+.close-button:active path {
+  opacity: 0.3;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -510,14 +519,17 @@ body {
   justify-content: space-between;
 }
 
-.search-form .field-group {
+.field-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   margin-bottom: 48px;
-  font-weight: 700;
   font-size: 20px;
+}
+
+.field-label {
+  font-weight: 700;
 }
 
 .date-group {
@@ -529,20 +541,21 @@ body {
   height: 48px;
   font-weight: 700;
   border-radius: 4px;
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: 402px;
+  padding-right: 50px;
 }
 
 .date-field::placeholder {
   color: #000000;
-  background-image: url(../images/calendar.svg);
-  background-repeat: no-repeat;
-  background-position: right;
+  opacity: 0.6;
 }
 
 .warning-text-date {
-  position: absolute;
-  margin: 74px 0 0 157px;
+  display: block;
+  margin: -44px 0 0 156px;
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
@@ -562,10 +575,13 @@ body {
   box-sizing: border-box;
   border-radius: 0;
   padding: 14px 10px;
-  width: 31px;
+  width: 37px;
   height: 48px;
   font-weight: 700;
   background-color: #f2f2f2;
+  appearance: textfield;
+  text-align: center;
+  cursor: pointer;
 }
 
 .family-counter {
@@ -574,19 +590,26 @@ body {
 
 .family-counter-plus {
   border-radius: 0 4px 4px 0;
-  width: 40px;
-  cursor: pointer;
+  fill-opacity: 0.3;
 }
 
 .family-counter-minus {
   border-radius: 4px 0 0 4px;
-  width: 40px;
-  cursor: pointer;
+  fill-opacity: 0.3;
+}
+
+.family-counter-plus:hover,
+.family-counter-minus:hover {
+  fill-opacity: 1;
+}
+
+.family-counter-plus:active,
+.family-counter-minus:active {
+  fill-opacity: 0.3;
 }
 
 .tooltip {
-  position: absolute;
-  margin-left: 64px;
+  margin-left: -30px;
   width: 26px;
   height: 26px;
 }
@@ -594,6 +617,7 @@ body {
 .tooltip-toggle {
   border: none;
   background-color: transparent;
+  width: 26px;
   padding: 0;
   margin: 0;
   display: block;
@@ -604,7 +628,7 @@ body {
   display: block;
 }
 
-.tooltip-toggle:hover .tooltip-icon path {
+.tooltip-toggle:hover .tooltip-icon {
   opacity: 0.6;
 }
 
@@ -618,7 +642,6 @@ body {
   padding: 23px 20px;
   border-radius: 10px;
   width: 256px;
-  min-height: 143px;
   box-shadow: 0 15px 30px #0000004d;
   position: absolute;
   margin-left: -115px;
@@ -626,8 +649,8 @@ body {
   display: none;
 }
 
-.tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip:hover .tooltip-text,
+.tooltip:focus .tooltip-text {
   display: block;
 }
 
@@ -650,7 +673,7 @@ body {
   line-height: 24px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.family-number::-webkit-outer-spin-button,
+.family-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
