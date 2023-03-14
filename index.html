@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -41,7 +42,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-button" href="#!">
+              <a class="button navigation-button" href="#!">
                 Хочу сюда!
               </a>
             </li>
@@ -51,7 +52,7 @@
       <main class="main-container main-index">
         <div class="hero-block">
           <h1 class="visually-hidden">Туристический город "Седона".</h1>
-          <img class="preview-background" src="images/index-background.jpg" wigth="1200" height="485"
+          <img class="preview-background" src="images/index-background.jpg" width="1200" height="485"
             alt="Фотография горного пейзажа.">
           <img class="preview-welcome-logo" src="images/welcome.svg" width="458" height="352"
             alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
@@ -115,7 +116,7 @@
           <p class="text appointment-text">
             Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <button class="appointment-button" type="button">Поиск гостиницы в Седоне</button>
+          <button class="button appointment-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="subscribe main-subscribe">
           <h2 class="subtitle subscribe-subtitle">Подпишитесь на рассылку</h2>
@@ -125,7 +126,7 @@
             <label class="visually-hidden" for="subscribe-email">Ваш e-mail:</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
               required>
-            <button class="button subscribe-button" type="submit">Подписаться</button>
+            <button class="form-button subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -198,14 +199,13 @@
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group date-group">
                 <label class="field-label" for="arrival">Дата Заезда:</label>
-                <input class="field date-field" type="text" id="arrival" name="arrival-date"
-                  placeholder="27 апреля 2020">
+                <input class="field date-field" type="text" id="arrival" name="arrival-date" placeholder="Укажите дату">
               </p>
               <span class="warning-text-date error-date">Мы не можем отправить вас в прошлое.</span>
               <p class="field-group date-group">
                 <label class="field-label" for="departure">Дата Выезда:</label>
                 <input class="field date-field" type="text" id="departure" name="departure-date"
-                  placeholder="1 сентября 2023">
+                  placeholder="Укажите дату">
               </p>
               <span class="warning-text-date">На эти даты есть свободные номера. Пока есть.</span>
               <div class="field-group family-group">
@@ -219,7 +219,7 @@
                   </button>
                   <input class="field family-number" type="number" id="parents" name="parents-number" value="2" min="0">
                   <button class="family-number family-counter-plus">
-                    <svg class="count-button" aria-hidden="true" focusable="false" swidth="14" height="14"
+                    <svg class="count-button" aria-hidden="true" focusable="false" width="14" height="14"
                       viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" />
                     </svg>
@@ -251,14 +251,14 @@
                   </button>
                   <input class="field family-number" type="number" id="kids" name="kids-number" value="2" min="0">
                   <button class="family-number family-counter-plus">
-                    <svg class="count-button" aria-hidden="true" focusable="false" swidth="14" height="14"
+                    <svg class="count-button" aria-hidden="true" focusable="false" width="14" height="14"
                       viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" />
                     </svg>
                   </button>
                 </p>
               </div>
-              <button class="button search-form-button" type="submit">Найти</button>
+              <button class="form-button search-form-button" type="submit">Найти</button>
             </form>
           </section>
         </div>
