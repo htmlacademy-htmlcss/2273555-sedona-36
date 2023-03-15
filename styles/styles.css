@@ -193,7 +193,7 @@ body {
 }
 
 .preview-subtitle {
-  margin: 69px 290px 25px;
+  margin: 69px 260px 25px;
 }
 
 .advantages-list {
@@ -273,7 +273,7 @@ body {
   padding: 102px 85px;
 }
 
-.advantages-description {
+.advantages-item-blue .advantages-description {
   color: inherit;
 }
 
@@ -325,7 +325,7 @@ body {
 }
 
 .preview-text {
-  padding: 0 274px 69px;
+  padding: 0 260px 69px;
 }
 
 .services-text {
@@ -333,7 +333,7 @@ body {
 }
 
 .appointment-subtitle {
-  padding: 0 450px;
+  padding: 0 260px;
 }
 
 .appointment {
@@ -640,6 +640,7 @@ body {
 }
 
 .tooltip {
+  transform: translateX(-8px);
   margin-left: -30px;
   width: 26px;
   height: 26px;
@@ -655,7 +656,6 @@ body {
 }
 
 .tooltip-icon {
-  transform: translateX(-8px);
   display: block;
 }
 
