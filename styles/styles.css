@@ -19,6 +19,12 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -122,6 +128,15 @@ body {
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: #ffffff4d;
+}
+
 .navigation-link-search {
   background-image: url("../images/search.svg");
 }
@@ -184,7 +199,7 @@ body {
 }
 
 .preview-subtitle {
-  margin: 69px 290px 25px;
+  margin: 69px 260px 25px;
 }
 
 .advantages-list {
@@ -200,7 +215,7 @@ body {
   min-height: 385px;
   width: 400px;
   box-sizing: border-box;
-  padding: 112px 85px;
+  padding: 112px 80px;
 }
 
 .advantages-group {
@@ -263,7 +278,7 @@ body {
   padding: 102px 85px;
 }
 
-.advantages-description {
+.advantages-item-blue .advantages-description {
   color: inherit;
 }
 
@@ -315,11 +330,15 @@ body {
 }
 
 .preview-text {
-  padding: 0 274px 69px;
+  padding: 0 260px 69px;
 }
 
 .services-text {
   padding: 0 355px 64px;
+}
+
+.appointment-subtitle {
+  padding: 0 260px;
 }
 
 .appointment {
@@ -337,7 +356,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756157;
-  margin-bottom: 100px;
+  margin: 0 40px 100px;
   padding: 10px 50px;
   border-radius: 4px;
   border: none;
@@ -373,7 +392,7 @@ body {
   padding: 14px 20px;
 }
 
-.button {
+.form-button {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
@@ -455,6 +474,7 @@ body {
 
 .modal-container {
   position: fixed;
+  overflow-y: auto;
   z-index: 2;
   top: 0;
   left: 0;
@@ -504,8 +524,7 @@ body {
 }
 
 .modal-title {
-  margin: 0;
-  margin-bottom: 64px;
+  margin: 0 60px 64px 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -530,6 +549,7 @@ body {
 
 .field-label {
   font-weight: 700;
+  margin-right: 18px;
 }
 
 .date-group {
@@ -552,9 +572,24 @@ body {
   opacity: 0.6;
 }
 
+.date-field:hover,
+.date-field:focus-visible {
+  background-color: #e6e6e6;
+}
+
+.date-field:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.date-field:placeholder-shown:focus-visible {
+  background-color: #f2f2f2;
+  outline: 3px solid #83b3d3;
+}
+
 .warning-text-date {
   display: block;
-  margin: -44px 0 0 156px;
+  margin: -44px 0 20px 156px;
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
@@ -574,7 +609,7 @@ body {
   border: none;
   box-sizing: border-box;
   border-radius: 0;
-  padding: 14px 10px;
+  padding: 17px 13px;
   width: 37px;
   height: 48px;
   font-weight: 700;
@@ -586,6 +621,7 @@ body {
 
 .family-counter {
   display: flex;
+  margin: 0;
 }
 
 .family-counter-plus {
@@ -609,6 +645,7 @@ body {
 }
 
 .tooltip {
+  transform: translateX(-8px);
   margin-left: -30px;
   width: 26px;
   height: 26px;
@@ -624,7 +661,6 @@ body {
 }
 
 .tooltip-icon {
-  margin-right: 30px;
   display: block;
 }
 
@@ -671,6 +707,15 @@ body {
   padding: 18px 256px;
   border-radius: 10px;
   line-height: 24px;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #68a2ca;
+}
+
+.form-button:active {
+  color: #ffffff4d;
 }
 
 .family-number::-webkit-outer-spin-button,
