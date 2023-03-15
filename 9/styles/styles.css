@@ -22,7 +22,6 @@ body {
 }
 
 .container {
-  min-width: 1020px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -210,7 +209,8 @@ body {
   min-height: 385px;
   width: 400px;
   box-sizing: border-box;
-  padding: 112px 85px;
+  padding: 112px 80px;
+  color: #333333;
 }
 
 .advantages-group {
@@ -330,6 +330,10 @@ body {
 
 .services-text {
   padding: 0 355px 64px;
+}
+
+.appointment-subtitle {
+  padding: 0 450px;
 }
 
 .appointment {
@@ -465,6 +469,7 @@ body {
 
 .modal-container {
   position: fixed;
+  overflow-y: auto;
   z-index: 2;
   top: 0;
   left: 0;
@@ -514,8 +519,7 @@ body {
 }
 
 .modal-title {
-  margin: 0;
-  margin-bottom: 64px;
+  margin: 0 60px 64px 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -540,6 +544,7 @@ body {
 
 .field-label {
   font-weight: 700;
+  margin-right: 18px;
 }
 
 .date-group {
@@ -563,17 +568,23 @@ body {
 }
 
 .date-field:hover,
-.date-field:focus {
+.date-field:focus-visible {
   background-color: #e6e6e6;
 }
 
-.date-field:focus {
-  border: 3px solid #83b3d3;
+.date-field:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.date-field:placeholder-shown:focus-visible {
+  background-color: #f2f2f2;
+  outline: 3px solid #83b3d3;
 }
 
 .warning-text-date {
   display: block;
-  margin: -44px 0 0 156px;
+  margin: -44px 0 20px 156px;
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
@@ -644,7 +655,7 @@ body {
 }
 
 .tooltip-icon {
-  margin-right: 30px;
+  transform: translateX(-8px);
   display: block;
 }
 
