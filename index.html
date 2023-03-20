@@ -183,7 +183,7 @@
       </footer>
       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
-          <button class="modal-close-button" type="submit">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
             <svg class="close-button" aria-hidden="true" focusable="false" width="53" height="53" viewBox="0 0 53 53"
               fill="#F2F2F2" xmlns="http://www.w3.org/2000/svg">
@@ -211,17 +211,19 @@
               <div class="field-group family-group">
                 <label class="field-label" for="parents">Взрослые:</label>
                 <p class="family-counter">
-                  <button class="family-number family-counter-minus" type="submit">
-                    <svg class="count-button" aria-hidden="true" focusable="false" width="14" height="8"
-                      viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" />
+                  <button class="family-number family-counter-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых.</span>
+                    <svg class="count-button" aria-hidden="true" focusable="false" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="black" />
                     </svg>
                   </button>
-                  <input class="field family-number" type="number" id="parents" name="parents-number" value="2" min="0">
-                  <button class="family-number family-counter-plus" type="submit">
-                    <svg class="count-button" aria-hidden="true" focusable="false" width="14" height="14"
-                      viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" />
+                  <input class="field family-number" type="number" id="parents" name="parents-number" value="2" min="1">
+                  <button class="family-number family-counter-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых.</span>
+                    <svg class="count-button" aria-hidden="true" focusable="false" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black" />
                     </svg>
                   </button>
                 </p>
@@ -244,16 +246,18 @@
                 </span>
                 <p class="family-counter">
                   <button class="family-number family-counter-minus" type="submit">
-                    <svg class="count-button" aria-hidden="true" focusable="false" width="14" height="8"
-                      viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" />
+                    <span class="visually-hidden">Уменьшить количество детей.</span>
+                    <svg class="count-button" aria-hidden="true" focusable="false" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 9V11H17V9H3Z" fill="black" />
                     </svg>
                   </button>
                   <input class="field family-number" type="number" id="kids" name="kids-number" value="2" min="0">
                   <button class="family-number family-counter-plus" type="submit">
-                    <svg class="count-button" aria-hidden="true" focusable="false" width="14" height="14"
-                      viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" />
+                    <span class="visually-hidden">Увеличить количество детей.</span>
+                    <svg class="count-button" aria-hidden="true" focusable="false" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="black" />
                     </svg>
                   </button>
                 </p>

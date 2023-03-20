@@ -138,8 +138,9 @@ img {
   color: #ffffff4d;
 }
 
-.button:disabled{
+.button:disabled {
   background: #e5e5e5;
+  pointer-events: none;
 }
 
 .navigation-link-search {
@@ -178,6 +179,7 @@ img {
 .hero-block {
   height: 485px;
   background-image: url(../images/index-background.jpg);
+  background-color: #333333;
 }
 
 .hero-block::before {
@@ -192,7 +194,7 @@ img {
 .preview-welcome-logo {
   display: block;
   margin: 0 auto;
-  transform: translateY(54px);
+  transform: translateY(52px);
 }
 
 .subtitle {
@@ -298,7 +300,7 @@ img {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 96px;
+  margin: 0 0 95px;
   list-style-type: none;
 }
 
@@ -364,11 +366,12 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #756157;
-  margin: 0 40px 100px;
-  padding: 12px 50px;
+  margin: 0 40px 96px;
+  padding: 8px 50px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  line-height: 36px;
 }
 
 .main-subscribe {
@@ -419,7 +422,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 41px 70px 30px;
+  padding: 43px 70px 30px;
 }
 
 .social-list {
@@ -617,7 +620,7 @@ img {
   border: none;
   box-sizing: border-box;
   border-radius: 0;
-  padding: 17px 13px;
+  padding: 14px 8px;
   width: 37px;
   height: 48px;
   font-weight: 700;
@@ -625,6 +628,7 @@ img {
   appearance: textfield;
   text-align: center;
   cursor: pointer;
+  outline: 0;
 }
 
 .family-counter {
@@ -647,7 +651,7 @@ img {
   fill-opacity: 1;
 }
 
-.count-button:focus {
+.family-number:focus-visible .count-button {
   outline: 3px solid #82b3d3;
   border-radius: 4px;
 }
@@ -731,8 +735,9 @@ img {
   color: #ffffff4d;
 }
 
-.form-button:disabled{
+.form-button:disabled {
   background: #e5e5e5;
+  pointer-events: none;
 }
 
 .family-number::-webkit-outer-spin-button,
