@@ -92,6 +92,7 @@ img {
   font-weight: 700;
   color: inherit;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .navigation-link:hover {
@@ -137,6 +138,10 @@ img {
   color: #ffffff4d;
 }
 
+.button:disabled{
+  background: #e5e5e5;
+}
+
 .navigation-link-search {
   background-image: url("../images/search.svg");
 }
@@ -172,6 +177,7 @@ img {
 
 .hero-block {
   height: 485px;
+  background-image: url(../images/index-background.jpg);
 }
 
 .hero-block::before {
@@ -186,7 +192,7 @@ img {
 .preview-welcome-logo {
   display: block;
   margin: 0 auto;
-  transform: translateY(-440px);
+  transform: translateY(54px);
 }
 
 .subtitle {
@@ -196,6 +202,7 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 700;
 }
 
 .preview-subtitle {
@@ -234,6 +241,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 30px;
+  font-weight: 700;
 }
 
 .advantages-title::after {
@@ -357,7 +365,7 @@ img {
   text-transform: uppercase;
   background-color: #756157;
   margin: 0 40px 100px;
-  padding: 10px 50px;
+  padding: 12px 50px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -411,7 +419,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px 30px;
+  padding: 41px 70px 30px;
 }
 
 .social-list {
@@ -572,17 +580,17 @@ img {
   opacity: 0.6;
 }
 
-.date-field:hover,
-.date-field:focus-visible {
+.field:hover,
+.field:focus-visible {
   background-color: #e6e6e6;
 }
 
-.date-field:focus-visible {
+.field:focus-visible {
   outline: 2px solid #000000;
   outline-offset: -2px;
 }
 
-.date-field:placeholder-shown:focus-visible {
+.field:placeholder-shown:focus-visible {
   background-color: #f2f2f2;
   outline: 3px solid #83b3d3;
 }
@@ -637,6 +645,11 @@ img {
 .family-counter-plus:hover,
 .family-counter-minus:hover {
   fill-opacity: 1;
+}
+
+.count-button:focus {
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
 }
 
 .family-counter-plus:active,
@@ -716,6 +729,10 @@ img {
 
 .form-button:active {
   color: #ffffff4d;
+}
+
+.form-button:disabled{
+  background: #e5e5e5;
 }
 
 .family-number::-webkit-outer-spin-button,
